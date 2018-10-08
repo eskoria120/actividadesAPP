@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Actividades APP</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/grid-layout.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <link href="//fonts.googleapis.com/css?family=Cutive Mono&subset=latin" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+
+<div class="grid-container">
+  <button class="button" id="btnloginGoogle">login con Google.</button>
+  <form id="formulario">
+        <p>
+          <label>fecha</label><br>
+          <input id="fecha" type="date" name="fecha" required>
+        </p>
+
+        <p>
+          <label>Area o departamento</label><br>
+          <input id="area" type="text" name="area" required>
+        </p>
+
+        <p>
+          <label>Descripción del servicio solicitado</label><br>
+          <input id="servicio" type="textarea"  name="descrpcionServicio" rows="11" cols="50" required>
+        </p>
+
+        <p>
+          <label>Hora inicio</label><br>
+          <input id="horainicio" type="time" name="horaInicio">
+        </p>
+
+        <p>
+          <label>Hora fin</label><br>
+          <input id="horafin" type="time" name="horaFin">
+        </p>
+
+        <p>
+          <label>Observaciones.</label><br>
+          <input id="observaciones" type="textarea"  name="observaciones" rows="11" cols="50">
+        </p>
+
+        <button class="button" id="boton" onClick="miFormulario()">guardar</button>
+  </form>
+
+  <button class="button" id="salir">salir</button>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-firestore.js"></script>
+<script src="js/app.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
+
+
+
+  </body>
+</html>
